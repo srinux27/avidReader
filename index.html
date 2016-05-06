@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Avid Reader Book Store</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+</head>
+
+<body>
+    <div class="container" ng-app="MainModule">
+        <div>
+            <nav class="navbar navbar-light bg-faded">
+                <a class="navbar-brand" href="#/">Avid Reader</a>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inventory">Inventory</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="well">
+            <h1 class="text-center">Avid Reader Book Store</h1>
+        </div>
+
+        <ng-view></ng-view>
+        
+    </div>
+
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/angular-resource.js"></script>
+    <script src="js/mainApp.js"></script>
+    <script src="js/factories/app-factory.js"></script>
+    <script src="js/services/app-services.js"></script>
+    <script src="js/controllers/list-controller.js"></script>
+    <script src="js/controllers/order-controller.js"></script>
+    <script src="js/controllers/inventory-controller.js"></script>
+    
+
+</body>
+
+</html>
